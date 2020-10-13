@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
     private void send_message() {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText text1b = (EditText) findViewById(R.id.textbox1);
-        EditText text2b = (EditText) findViewById(R.id.textbox2);
-        EditText text3b = (EditText) findViewById(R.id.textbox3);
+//        EditText text2b = (EditText) findViewById(R.id.textbox2);
+//        EditText text3b = (EditText) findViewById(R.id.textbox3);
         String text1 = text1b.getText().toString();
-        String text2 = text2b.getText().toString();
-        String text3 = text3b.getText().toString();
+//        String text2 = text2b.getText().toString();
+//        String text3 = text3b.getText().toString();
         intent.putExtra(TB_1, text1);
-        intent.putExtra(TB_2, text2);
-        intent.putExtra(TB_3, text3);
+//        intent.putExtra(TB_2, text2);
+//        intent.putExtra(TB_3, text3);
         startActivity(intent);
 
     }
